@@ -1,0 +1,17 @@
+language: python
+cache: pip
+sudo: false
+
+python:
+  - "2.7"
+  - "3.5"
+  - "pypy"
+
+install:
+  - travis_retry pip -q install transitions
+  - travis_retry pip -q install behave
+  - python setup.py -q install
+
+script:
+  - python --version
+  - behave
