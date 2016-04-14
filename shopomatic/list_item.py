@@ -42,7 +42,7 @@ class ListItem(Item):
     @:param int quantity
     @:return self
     """
-    def set_quantity(self, quantity: int):
+    def set_quantity(self, quantity):
         if quantity is None:
             quantity = self.quantity
 
@@ -57,7 +57,7 @@ class ListItem(Item):
     @:param int quantity
     @:return bool
     """
-    def is_no_longer_required(self, quantity: int) -> bool:
+    def is_no_longer_required(self, quantity):
         if quantity is None:
             quantity = self.quantity
 

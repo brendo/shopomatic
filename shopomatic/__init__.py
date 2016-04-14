@@ -21,7 +21,7 @@ def get_items(shopping):
             except ValueError:
                 print("Please enter a number")
 
-        shopping.add(ListItem(item, quantity))
+        shopping.add(ListItem(item, int(quantity)))
 
     return shopping
 

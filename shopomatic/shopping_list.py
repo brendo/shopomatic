@@ -58,7 +58,7 @@ class ShoppingList(object):
     Determines if the shopping is done by making sure all the list
     items have been fully acquired
     """
-    def is_done(self) -> bool:
+    def is_done(self):
         items = [item for item in self.items.values() if item.state is not 'acquired']
 
         return len(items) is 0
