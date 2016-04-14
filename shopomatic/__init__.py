@@ -1,3 +1,4 @@
+from __future__ import print_function
 from shopomatic.list_item import ListItem
 from shopomatic.shopping_list import ShoppingList
 

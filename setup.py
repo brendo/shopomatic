@@ -12,6 +12,6 @@ setup(
     author='brendanabbott',
     author_email='',
     description='',
-    install_requires=['transitions'],
+    install_requires=['transitions', 'future'],
     tests_require=['behave']
 )

@@ -19,7 +19,7 @@ class ListItem(Item):
         self.machine = Machine(model=self, states=ListItem.states, initial='needed')
         self.machine.add_transition(
             'found',
-            ['needed','partial'],
+            ['needed', 'partial'],
             'acquired',
             conditions=['is_no_longer_required'],
             before='set_quantity'
@@ -27,7 +27,7 @@ class ListItem(Item):
 
         self.machine.add_transition(
             'found',
-            ['needed','partial'],
+            ['needed', 'partial'],
             'partial',
             unless=['is_no_longer_required'],
             before='set_quantity'

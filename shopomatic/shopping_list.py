@@ -32,6 +32,12 @@ class ShoppingList(object):
         return self.items.get(name)
 
     """
+    @:param str name
+    """
+    def remove(self, name):
+        del self.items[name]
+
+    """
     Look in the items of this shopping list to see if the item was
     found, and if it was, reduce the quantity required by the given
     amount
